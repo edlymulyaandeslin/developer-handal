@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog</title>
+  <link href="dist/css/final.css" rel="stylesheet" />
+  <!-- <link rel="shortcut icon" href="boy.png" type="image/x-icon" /> -->
+  <script>
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script>
+</head>
+
+<body>
+  <!-- header section start -->
+  <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+    <div class="container">
+      <div class="relative flex items-center justify-between">
+        <div class="px-4">
+          <a href="#home" class="block py-6 text-lg font-bold text-primary">edlymulyaandeslin</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+            <span class="hamburger-line origin-top-left transition duration-300"></span>
+            <span class="hamburger-line transition duration-300"></span>
+            <span class="hamburger-line origin-bottom-left transition duration-300"></span>
+          </button>
+
+          <nav id="nav-menu"
+            class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="#home"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Beranda</a>
+              </li>
+              <li class="group">
+                <a href="#perjalanan"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Perjalanan</a>
+              </li>
+              <li class="group">
+                <a href="#kurikulum"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Kurikulum</a>
+              </li>
+              <li class="group">
+                <a href="#ujiansertifikasi"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Ujian dan
+                  Sertifikasi</a>
+              </li>
+              <li class="group">
+                <a href="#manfaat"
+                  class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Manfaat</a>
+              </li>
+              <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                <div class="flex">
+                  <span class="mr-2 text-sm text-slate-500">Light</span>
+                  <input type="checkbox" class="hidden" id="dark-toggle" />
+                  <label for="dark-toggle">
+                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                      <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
+                      </div>
+                    </div>
+                  </label>
+                  <span class="ml-2 text-sm text-slate-500">Dark</span>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header section end -->
+
+  <!-- hero section start -->
+  <section id="home" class="pt-36 dark:bg-dark">
+    <div class="container">
+      <div class="flex flex-wrap justify-center">
+        <h2 class="mb-16 text-3xl font-bold text-primary sm:text-4xl lg:text-4xl text-center">
+          Pengalaman mengikuti program DevHandal dan tersertifikasi Certified Developer dari Alibaba Cloud
+        </h2>
+        <div class="w-full self-center px-4 lg:w-1/2">
+          <p class="mb-10 font-medium leading-relaxed text-secondary text-center">Pada era digital yang begitu pesat
+            seperti
+            sekarang ini, kemampuan di bidang teknologi informasi menjadi hal yang sangat penting. Salah satu bidang
+            yang semakin berkembang adalah komputasi awan atau cloud computing.
+          </p>
+          <p class="mb-10 font-medium leading-relaxed text-secondary text-center">Alibaba Cloud, sebagai salah satu
+            pemimpin di industri ini, telah menghadirkan program pelatihan yang sangat bergengsi, yaitu program
+            Certified Developer. Saya ingin berbagi pengalaman saya mengikuti program ini melalui DevHandal, sebuah
+            platform pelatihan yang telah menjalin kemitraan dengan Alibaba Cloud.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero section end -->
+
+  <!-- perjalanan section start -->
+  <section id="perjalanan" class="bg-slate-800 pt-36 pb-32 dark:bg-slate-800">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="mb-10 w-full px-4 lg:w-1/2">
+          <h4 class="mb-3 text-lg font-bold uppercase text-primary">
+            Memulai Perjalanan
+          </h4>
+
+          <p class="text-base font-medium text-secondary lg:text-lg">
+            "Saat saya pertama kali mendengar tentang program Certified Developer dari Alibaba Cloud, saya merasa sangat
+            antusias. Namun, saya juga merasa agak cemas karena saya tahu persaingan di dunia teknologi sangat ketat.
+            Itulah mengapa saya memutuskan untuk bergabung dengan DevHandal, sebuah platform pelatihan yang telah lama
+            terkenal dengan reputasinya dalam menyediakan kursus berkualitas tinggi."
+          </p>
+        </div>
+        <div class="w-full px-4 lg:w-1/2">
+
+          <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
+            "Setelah mendaftar di DevHandal, saya mendapatkan akses ke berbagai materi pelatihan yang sangat
+            komprehensif, termasuk video tutorial, dokumen, dan ujian praktik. Materi-materi ini sangat membantu saya
+            memahami konsep-konsep dasar Alibaba Cloud dan cloud computing secara umum. Selain itu, saya juga
+            mendapatkan bimbingan dari instruktur berpengalaman yang selalu siap membantu jika saya mengalami
+            kesulitan."
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- perjalanan section end -->
+
+  <!-- kurikulum section start -->
+  <section id="kurikulum" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-16 max-w-xl text-center">
+          <h2 class="mb-4 text-2xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
+            Kurikulum
+          </h2>
+        </div>
+      </div>
+
+      <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
+        <table class="text-base font-medium text-secondary lg:text-lg">
+          <tbody>
+            <tr>
+              <td class="font-bold text-primary">Alibaba Cloud Architecture</td>
+              <td>Saya belajar tentang arsitektur Alibaba Cloud, termasuk komponen-komponennya seperti Elastic Compute
+                Service (ECS), Object Storage Service (OSS), dan RDS (Relational Database Service).</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-primary">Kemanan di Alibaba Cloud</td>
+              <td>Pentingnya menjaga keamanan data dan aplikasi di cloud tidak bisa diabaikan. Program ini memberikan
+                pemahaman mendalam tentang praktik keamanan terbaik di Alibaba Cloud.</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-primary">Pengelolaan Aplikasi di Alibaba Cloud</td>
+              <td>Saya juga belajar cara mengelola dan mendeploy aplikasi di Alibaba Cloud menggunakan layanan seperti
+                Container Service dan Serverless.</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-primary">Optimasi Kinerja</td>
+              <td> Program ini juga mencakup teknik optimasi kinerja agar aplikasi berjalan lebih efisien dan responsif.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </section>
+  <!-- kurikulum section end -->
+
+  <!-- ujiansertifikasi section start -->
+  <section id="ujiansertifikasi" class="bg-slate-800 pt-36 pb-32 dark:bg-slate-300">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-16 text-center">
+          <h2 class="mb-16 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl mb-7">
+            Ujian dan Sertifikasi
+          </h2>
+          <p class="text-md font-medium text-secondary md:text-lg">
+            Setelah menyelesaikan materi pelatihan, saya merasa siap untuk mengikuti ujian sertifikasi. Ujian ini
+            tidaklah mudah, tetapi berkat persiapan yang matang, saya berhasil melewati ujian dengan hasil yang
+            memuaskan. Saya merasa sangat bangga ketika menerima sertifikat Certified Developer dari Alibaba Cloud.
+          </p>
+          <p class="text-md font-medium text-secondary md:text-lg mt-5">
+            Sertifikat ini bukan hanya sekadar pengakuan atas usaha saya, tetapi juga merupakan alat yang sangat
+            berharga untuk meningkatkan karier saya di bidang teknologi informasi. Sertifikat ini diakui secara
+            internasional dan telah membuka banyak pintu kesempatan bagi saya dalam industri teknologi.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- ujiansertifikasi section end -->
+
+  <!-- manfaat section start -->
+  <section id="manfaat" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
+    <div class="container">
+      <div class="w-full px-4 mb-16">
+        <div class="mx-auto max-w-xl text-center">
+          <h2 class="mb-4 text-2xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
+            Manfaat Bergabung dengan DevHandal
+          </h2>
+        </div>
+      </div>
+
+      <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
+        <div class="text-base font-medium text-secondary lg:text-lg">
+          <p class="text-center">Selama perjalanan saya menuju sertifikasi Certified Developer, DevHandal memainkan
+            peran yang sangat
+            penting. Mereka tidak hanya menyediakan materi pelatihan yang berkualitas tinggi, tetapi juga memberikan
+            dukungan teknis dan motivasi yang saya butuhkan. Selain itu, DevHandal juga memiliki komunitas yang aktif di
+            mana saya bisa berdiskusi dan berbagi pengalaman dengan sesama peserta kursus.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- manfaat section end -->
+
+  <!-- footer start -->
+  <footer class="bg-dark pt-24 pb-12">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
+          <h3 class="mb-2 text-2xl font-bold">Info Lebih lanjut Kunjungi </h3>
+          <p><a href="https://id.alibabacloud.com/" target="_blank">Alibaba Cloud</a></p>
+          <p><a href="https://devhandal.id?reference=0PRST" target="_blank">Developer Handal</a></p>
+          <p><a href="https://dashboard.codepolitan.com/" target="_blank">CodePolitan</a></p>
+        </div>
+        <div class="mb-12 w-full px-4 md:w-1/3">
+          <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
+          <ul class="text-slate-300">
+            <li>
+              <a href="#home" class="mb-3 inline-block text-base hover:text-primary">Beranda</a>
+            </li>
+            <li>
+              <a href="#perjalanan" class="mb-3 inline-block text-base hover:text-primary">Perjalanan</a>
+            </li>
+            <li>
+              <a href="#kurikulum" class="mb-3 inline-block text-base hover:text-primary">Kurikulum</a>
+            </li>
+            <li>
+              <a href="#ujiansertifikasi" class="mb-3 inline-block text-base hover:text-primary">Ujian dan
+                Sertifikasi</a>
+            </li>
+            <li>
+              <a href="#manfaat" class="mb-3 inline-block text-base hover:text-primary">Manfaat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="w-full border-t border-slate-700 pt-10">
+        <div class="mb-5 flex items-center justify-center">
+          <!-- alibabacloud -->
+          <a href="https://id.alibabacloud.com/" target="_blank"
+            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <img src="/dist/img/iconAlibaba.png" width="20" alt="">
+          </a>
+          <!-- devhandal -->
+          <a href="https://devhandal.id?reference=0PRST" target="_blank"
+            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <img src="dist/img/icondevhandal.png" width="20" alt="">
+          </a>
+          <!-- codepolitan -->
+          <a href="https://dashboard.codepolitan.com/" target="_blank"
+            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <img src="dist/img/iconCodpol.png" width="20" alt="">
+          </a>
+
+        </div>
+        <p class="text-center text-sm font-medium text-slate-500">
+          Create by
+          &copy;
+          <a href="https://instagram.com/__elyynn" target="_blank" class="font-bold text-primary">elyynn</a>
+          <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <!-- back to top start -->
+  <a id="to-top" href="#home"
+    class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse">
+    <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"> </span>
+  </a>
+  <!-- back to top end -->
+
+  <script src="dist/js/script.js"></script>
+</body>
+
+</html>
